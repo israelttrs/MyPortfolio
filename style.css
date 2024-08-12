@@ -1,0 +1,413 @@
+/* You can add custom CSS and extend Boostrap styles in this file.  Remember, Bootstrap is just CSS at the end of the day! */
+
+body, html {
+    height: 100%;
+    background-color: #000022;
+    margin: 0;
+    overflow-x: hidden;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    
+} 
+.container-fluid navbar-custom {
+
+}
+
+/* Section Title */
+
+#title {
+  color: white;
+  text-align: center;
+  font-size: 2.5em;
+  font-family: 'Space Grotesk', sans-serif;
+  padding: 2% 2%;
+}
+
+/* Navbar Formatting */
+
+.nav .navbar{
+padding-right: 12px;
+ 
+}
+
+#navbarNavAltMarkup {
+  padding-right: 0px;
+
+}
+
+.navbar-custom {
+
+}
+
+.navbar .navbar-nav .nav-link{
+  padding: 1em;
+}
+
+.navbar .navbar-nav .nav-link{
+position: relative;
+}
+
+.navbar .navbar-nav .nav-link::after{
+position: absolute; 
+  bottom: 0; 
+  left: 0; 
+  right: 0; 
+  content: ""; 
+  background-color: white;
+  width: 0%; 
+  height: 3px;
+  transition: all .5s;
+  margin: 0 auto;
+}
+  
+.navbar .navbar-nav .nav-link:hover::after{ 
+  width: 100%;
+}
+                                        
+/*  Profile Picture                          */
+
+.head {
+  padding-top:20vh;
+}
+
+#Me {
+		position:relative;
+  
+	width:18vw;
+	height:18vw;
+/* 	object-fit:cover; */
+	border-radius:50%;
+	object-position:0 46%;
+	display:block;
+	margin:auto;
+  
+	border:solid 
+		rgba(236, 236, 255, .2)
+		8px;
+	min-width:120px;
+	min-height:120px;
+	max-width:220px;
+	max-height:220px;
+/*   z-index: 10;
+  Position: relative;
+  z-index: 10;
+  max-width: 30%;
+  max-height: 30%;
+  border-radius: 100%;
+  top: 30%;
+  left: 42%; */
+}
+
+/* Shake Animation */
+
+#Me:hover {
+
+  
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake .7s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+/* filler   */
+/* New Section */
+/* filler   */
+
+#mission-section {
+  margin-bottom: 5%;
+}
+
+.statement {
+margin: 10% 5% 10% 5%;  
+text-align: left;
+
+}
+
+.mission-image {
+  width: 100%;
+  height: auto;
+}
+
+/* filler   */
+/* New Section */
+/* filler   */
+
+#skills-section {
+  background-color: #0094c6;
+  color: #000022;
+}
+
+#logo {
+  max-height: 20vh;
+  
+}
+
+/* .grow img{
+transition: 1s ease;
+}
+
+.grow img:hover{
+-webkit-transform: scale(1.2);
+-ms-transform: scale(1.2);
+transform: scale(1.2);
+transition: 1s ease;
+} */
+
+
+#skillset {
+  padding: 5% 5%;
+}
+
+#logo-caption{
+  margin-top:10%;
+/*   background:rgba(0,0,0,0.1);
+  border-radius: 10%; */
+  padding: 5px;
+}
+/* filler   */
+/* New Section */
+/* filler   */
+
+
+#inspiration-section {
+  
+}
+
+/* filler   */
+/* New Section */
+/* filler   */
+
+#contact-section {
+  color: white;
+  background-color: #0094c6;
+  text-align: center;
+  position: relative;
+
+  
+/* @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap'); */
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+  
+html,body{
+/*   display: grid; */
+  height: 100%;
+  width: 100%;
+  place-items: center;
+/*   background: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%); */
+}
+.wrapper{
+  display: inline-flex;
+  color: black;
+  margin-top: 3%;
+  margin-bottom: 6%;
+}
+.wrapper .icon{
+  margin: 0 20px;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .icon span{
+  display: block;
+  height: 60px;
+  width: 60px;
+  background: #fff;
+  border-radius: 50%;
+  position: relative;
+  z-index: 10;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  
+}
+.wrapper .icon span i{
+  line-height: 60px;
+  font-size: 25px;
+/*   color: black; */
+}
+.wrapper .icon .tooltip{
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  background: #000;
+  color: #fff; !important;
+  padding: 10px 18px;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 25px;
+  opacity: 0;
+  pointer-events: none;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .icon:hover .tooltip{
+  top: -70px;
+  opacity: 1;
+  pointer-events: auto;
+}
+.icon .tooltip:before{
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  background: #fff;
+  left: 50%;
+  bottom: -6px;
+  transform: translateX(-50%) rotate(45deg);
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+}
+.wrapper .icon:hover span{
+  color: #fff; !important;
+}
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip{
+  text-shadow: 0px -1px 0px rgba(0,0,0,0.4);
+}
+
+/* a:link {
+text-decoration: none;
+  color: black;
+} */
+
+.wrapper .email:hover span,
+.wrapper .email:hover .tooltip,
+.wrapper .email:hover .tooltip:before{
+  background: salmon;
+}
+.wrapper .linkedin:hover span,
+.wrapper .linkedin:hover .tooltip,
+.wrapper .linkedin:hover .tooltip:before{
+  background: #0077b5;
+}
+.wrapper .phone:hover span,
+.wrapper .phone:hover .tooltip,
+.wrapper .phone:hover .tooltip:before{
+  background: green;
+}
+
+#button-link {
+ color: black;
+ text-decoration: none;
+}
+
+#button-link:hover {
+  color: white;
+  text-decoration: none;
+}
+
+
+
+
+ #footer-section {
+   position:relative;
+    background-color: #005e7c; !important;
+   text-align: center;
+   color: white;
+   padding: auto-flow;
+   margin: 0;
+  }
+
+  #trademark {
+    padding-top: 16px;
+    margin-right: 0;
+    overflow: hidden;
+  }
+
+/* The hero image */
+#hero-section {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+
+  /* Set a specific height */
+  height: 50%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .9)), url(/hero.jpg);
+  background-size: cover;
+  position: relative;
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  width: 100%;
+  align-items: center;
+  z-index: 1;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+/* Carousel */
+
+#carouselExampleCaptions {
+  position: relative;
+  top: 20%;
+  padding: 0% 15% 5% 15%;
+  max-width: 100%;
+  
+}
+
+.ccd {
+/*   background:rgba(0,0,0,.5) */
+ 
+}
+
+.drk:after {
+  content:"";
+  diplay: block;
+  position: absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+background:rgba(0,0,0,.7);
+  background: #000;
+  opacity: 1;
+}
+
+#dark:after {
+  content:"";
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background:rgba(0,0,0,0.6);
+
+ 
+}
+
+
